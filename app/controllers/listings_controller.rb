@@ -47,7 +47,7 @@ class ListingsController < ApplicationController
 
   private
   def listing_params
-    params.require(:listing).permit(:name, :age, :gender, :description)
+    params.require(:listing).permit(:name, :age, :gender, :description, :photo_url)
   end
 
   def set_post

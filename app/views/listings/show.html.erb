@@ -3,6 +3,7 @@
 
 <div>
   <p><%= @listing.description %></p>
+  <%= image_tag(@listing.photo_url, class: "listing-photo") %>
 </div>
 
 <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
