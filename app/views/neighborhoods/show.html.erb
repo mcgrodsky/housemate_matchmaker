@@ -4,7 +4,8 @@
 
 <div>
   <% @neighborhood.listings.each do |listing| %>
-  <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing)) %><h1>
-
+  <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing))
+   %><h1>
+     <%= image_tag(listing.photo_url, class: "listing-photo") %>
   <% end %>
 </div>
