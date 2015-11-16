@@ -1,0 +1,7 @@
+<h2>Update Listing</h2>
+
+<%= render "form" %>
+
+<%= form_for [@neighborhood, @listing], method: "delete" do |f| %>
+<%= f.submit "Delete Listing", class: "delete" %>
+<% end %>

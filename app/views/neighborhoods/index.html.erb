@@ -1,1 +1,3 @@
-<h1> </h1>
+<% @neighborhoods.each do |neighborhood| %>
+<h1><%= link_to(neighborhood.title, neighborhood) %><h1>
+<% end %>

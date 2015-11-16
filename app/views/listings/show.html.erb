@@ -1,0 +1,8 @@
+<h1><%= @listing.name %></h1>
+
+
+<div>
+  <p><%= @listing.description %></p>
+</div>
+
+<%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
