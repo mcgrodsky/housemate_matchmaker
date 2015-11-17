@@ -19,6 +19,8 @@ class ListingsController < ApplicationController
   def create
     @neighborhood = Neighborhood.find(params[:neighborhood_id])
     @listing = @neighborhood.listings.create!(listing_params.merge(user: current_user))
+    @listing.user = current_user
+    @listing.save
     redirect_to neighborhood_path(@neighborhood), notice: "Your listing was successfully created!!"
   end
 
