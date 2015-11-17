@@ -1,5 +1,3 @@
-
-
 <table class="listing">
   <tr>
     <th>Name</th>
@@ -7,7 +5,6 @@
     <th>Gender</th>
     <th>About Me</th>
   </tr>
-
     <tr>
       <td><%= @listing.name %></td>
       <td><%= @listing.age %></td>
@@ -15,6 +12,5 @@
       <td><%= @listing.description %></td>
       <%= image_tag(@listing.photo_url, class: "listing-photo") %>
     </tr>
-
 </table>
 <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>

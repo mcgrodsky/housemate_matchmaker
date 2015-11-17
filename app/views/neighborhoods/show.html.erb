@@ -1,7 +1,6 @@
-<h1><%= @neighborhood.title %></h1>
-<h1><%= @neighborhood.description %></h1>
-<%= link_to "Add listing (+)".html_safe, new_neighborhood_listing_path(@neighborhood) %>
 
+<%= link_to "Add listing (+)".html_safe, new_neighborhood_listing_path(@neighborhood) %>
+<h1> Current Listings for <%=@neighborhood.title %> </h1>
 <div>
   <% @neighborhood.listings.each do |listing| %>
   <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing))
