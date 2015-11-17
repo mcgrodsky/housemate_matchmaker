@@ -8,7 +8,7 @@
 </head>
 <body>
   <% if current_user %>
-  <p><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></p>
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
   <% else %>
   <p><%= link_to 'Signup', new_user_registration_path %></p>
   <p><%= link_to 'Login', new_user_session_path %></p>

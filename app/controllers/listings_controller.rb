@@ -2,18 +2,12 @@ class ListingsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:show, :new, :create, :edit, :update, :destroy]
   def index
-    # authenticate_user!
-    # if current_user
-    #   @listings = current_user.listings
-    # else
-      @listings = Listing.order(params[:sort])
-
-    # end
+    @listings = Listing.all
   end
 
   def new
-      @neighborhood = Neighborhood.find(params[:neighborhood_id])
-      @listing = Listing.new
+    @neighborhood = Neighborhood.find(params[:neighborhood_id])
+    @listing = Listing.new
   end
 
   def create
@@ -24,7 +18,8 @@ class ListingsController < ApplicationController
 
   def show
     @neighborhood = Neighborhood.find(params[:neighborhood_id])
-    # @listing = Listing.find(params[:id])
+    @listings = Listing.order(params[:sort])
+    @listing = Listing.find(params[:id])
   end
 
   def edit
