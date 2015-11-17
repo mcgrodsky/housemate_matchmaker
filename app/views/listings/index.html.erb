@@ -2,8 +2,7 @@
   listings
 </h1>
 <div>
-  <% @neighborhood.listings.each do |listing| %>
-  <div><%= link_to(listing.name, neighborhood_listings_path(@neighborhood, listing))
-   %></div>
+  <% @listings.each do |listing| %>
+  <div><%= link_to(listing.name, neighborhood_listings_path) %></div>
    <% end %>
  </div>
