@@ -1,6 +1,6 @@
 
 <button><%= link_to "Back to #{@neighborhood.title}", neighborhood_path(@neighborhood, @listing) %></button>
-<br>
+
 <table class="listing">
   <tr>
     <th>Name</th>
@@ -13,7 +13,7 @@
       <td><%= @listing.age %></td>
       <td><%= @listing.gender %></td>
       <td><%= @listing.description %></td>
-      <%= image_tag(@listing.photo_url, class: "listing-photo") %>
+      <td><%= image_tag(@listing.photo_url, class: "listing-photo") %></td>
     </tr>
 </table>
 <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
