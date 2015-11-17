@@ -1,3 +1,4 @@
 <% @neighborhoods.each do |neighborhood| %>
-<h1><%= link_to(neighborhood.title, neighborhood) %><h1>
+<h1 class = "neighborhood-title"><%= link_to(neighborhood.title, neighborhood) %><h1>
+    <h2 class = "neighborhood-description"><%= link_to(neighborhood.description, neighborhood) %><h2>
 <% end %>

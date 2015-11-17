@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 #bootstrap
-gem 'bootstrap-sass', '~> 3.2.0'
-gem 'autoprefixer-rails'
+
 #devise
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -47,3 +46,5 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'

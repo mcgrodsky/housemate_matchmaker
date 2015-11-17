@@ -7,15 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <% if current_user %>
-  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-  <% else %>
-  <p><%= link_to 'Signup', new_user_registration_path %></p>
-  <p><%= link_to 'Login', new_user_session_path %></p>
-  <% end %>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <h1><%= link_to "Housemate Matchmaker", neighborhoods_path %></h1>
-  <%= yield %>
+  <div class = "container">
+    <ul class = "nav nav-tabs">
+      <% if current_user %>
+      <li><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></li>
+      <% else %>
+      <li><%= link_to 'Signup', new_user_registration_path %></li>
+      <li><%= link_to 'Login', new_user_session_path %></li>
+      <% end %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <button><%= link_to "Housemate Matchmaker", neighborhoods_path %></button>
+    </ul>
+    <%= yield %>
+  </div>
 </body>
 </html>
