@@ -1,19 +1,13 @@
-<table class="listing">
+
+
+<button><%= link_to "Back to #{@neighborhood.title}", neighborhood_path(@neighborhood, @listing) %></button>
+
+<table class="table">
   <tr>
     <th><%= link_to "Name", :sort => "name" %></th>
     <th><%= link_to "Age", :sort => "age" %></th>
     <th><%= link_to "Gender", :sort => "gender" %></th>
     <th><%= link_to "About Me", :sort => "aboutme" %></th>
-  </tr>
-
-<button><%= link_to "Back to #{@neighborhood.title}", neighborhood_path(@neighborhood, @listing) %></button>
-
-<table class="listing">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Gender</th>
-    <th>About Me</th>
   </tr>
     <tr>
       <td><%= @listing.name %></td>
