@@ -10,6 +10,10 @@ def show
     #  @neighborhood = Neighborhood.find(params[:id])
 end
 
+def edit
+  #  @neighborhood = Neighborhood.find(params[:id])
+end
+
 
 private
 def neighborhood_params

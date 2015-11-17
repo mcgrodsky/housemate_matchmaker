@@ -1,6 +1,7 @@
 class ListingsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:show, :new, :create, :edit, :update, :destroy]
+
   def index
      authenticate_user!
     if current_user
