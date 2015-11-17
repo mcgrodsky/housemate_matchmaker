@@ -1,10 +1,18 @@
+<table class="listing">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>About Me</th>
+  </tr>
 
-<div>
-  <h1><%= @listing.name %></h1>
-  <h2><%= @listing.age %></h2>
-  <h2><%= @listing.gender %></h2>
-  <p><%= @listing.description %></p>
-  <%= image_tag(@listing.photo_url, class: "listing-photo") %>
-</div>
+    <tr>
+      <td><%= @listing.name %></td>
+      <td><%= @listing.age %></td>
+      <td><%= @listing.gender %></td>
+      <td><%= @listing.description %></td>
+      <%= image_tag(@listing.photo_url, class: "listing-photo") %>
+    </tr>
 
+</table>
 <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>

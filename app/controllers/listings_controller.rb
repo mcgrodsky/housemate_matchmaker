@@ -6,7 +6,8 @@ class ListingsController < ApplicationController
     # if current_user
     #   @listings = current_user.listings
     # else
-      @listings = Listing.all
+      @listings = Listing.order(params[:sort])
+
     # end
   end
 
