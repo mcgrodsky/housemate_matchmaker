@@ -7,6 +7,7 @@ class ListingsController < ApplicationController
     #   @listings = current_user.listings
     # else
       @listings = Listing.all
+    # @listing = Listing.find(params[:id])
     # end
   end
 
