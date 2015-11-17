@@ -2,13 +2,12 @@ class ListingsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:show, :new, :create, :edit, :update, :destroy]
   def index
-    # authenticate_user!
-    # if current_user
-    #   @listings = current_user.listings
-    # else
+     authenticate_user!
+    if current_user
+       @listings = current_user.listings
+     else
       @listings = Listing.all
-    # @listing = Listing.find(params[:id])
-    # end
+     end
   end
 
   def new

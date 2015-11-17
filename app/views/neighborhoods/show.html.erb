@@ -1,14 +1,13 @@
 
-  <%= link_to "Add listing (+)".html_safe, new_neighborhood_listing_path(@neighborhood) %>
-  <h1> Current Listings for <%=@neighborhood.title %></h1>
-  <div id = "neighborhood-show" class = "container">
-    <div class = "row">
-      <div class = "col-md-4">
-    <% @neighborhood.listings.each do |listing| %>
-    <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing))%></h1>
+<%= link_to "Add listing (+)".html_safe, new_neighborhood_listing_path(@neighborhood) %>
+<h1> Current Listings for <%=@neighborhood.title %></h1>
+<div id = "neighborhood-show" class = "container">
+  <div class = "row">
+    <div class = "col-md-4">
+      <% @neighborhood.listings.each do |listing| %>
+      <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing))%></h1>
       <%= image_tag(listing.photo_url, class: "listing-photo") %>
       <% end %>
     </div>
-  </div>
   </div>
 </div>
