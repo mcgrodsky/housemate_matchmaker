@@ -5,8 +5,7 @@ h1{
   text-align: center;
 }
 .neighborhood-title{
-  border: 1px solid pink;
-  color: red;
+  color: gray;
 }
 h2{
   font-size: 20px;
@@ -30,6 +29,7 @@ button {
     border: 1px dashed gray;
     height: 320px;
     margin-top: 20px;
+    background: lightgray;
 }
 #listing-container {
   margin-top: 20px;

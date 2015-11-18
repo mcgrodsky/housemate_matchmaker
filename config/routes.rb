@@ -5,5 +5,4 @@ Rails.application.routes.draw do
     resources :neighborhoods do
       resources :listings
     end
-
 end

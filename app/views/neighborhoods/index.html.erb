@@ -1,6 +1,7 @@
-<div id = "neighborhoods-index" class = "container-fluid">
+
+<div class = "container-fluid">
   <% @neighborhoods.in_groups_of(1, false).each do |group| %>
-  <div class = "row">
+  <div id = "neighborhoods-index" class = "row">
     <% group.each do |neighborhood| %>
     <div id = "neighborhood-container" class = "col-lg-6 col-lg-offset-3 text-center">
       <h1><%= link_to(neighborhood.title, neighborhood, class: "neighborhood-title") %></h1>

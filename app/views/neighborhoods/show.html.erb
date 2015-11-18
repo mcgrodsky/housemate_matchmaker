@@ -1,6 +1,9 @@
 <div class = "container-fluid">
   <h1 class = "neighborhood-title"> Current Listings for <%=@neighborhood.title %></h1>
   <%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
+
+  
+
   <% @neighborhood.listings.in_groups_of(1, false).each do |group| %>
   <div class = "row">
     <% group.each do |listing| %>
