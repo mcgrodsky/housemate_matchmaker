@@ -22,4 +22,8 @@
       <td><%= image_tag(@listing.photo_url, class: "listing-photo") %></td>
     </tr>
 </table>
-<%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
+<% if current_user.id == @listing.user_id %>
+  <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
+<% else %>
+ <h1> Test </h1>
+<% end %>
