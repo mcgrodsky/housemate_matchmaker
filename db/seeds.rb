@@ -78,10 +78,9 @@ neighborhoods = Neighborhood.create([
 
   {name: "Lucas Perry", age: "34", gender: "Male", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTF4dw9Pe-i-tKtnnGh3kg_SMGCQwEVq25CRhX0aHsj2xY3-af5", neighborhood_id: "6"},
 
-  {name: "Amy Sans", age: "29", gender: "Female", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"
-  https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQz9_ozu-dYG1f3x8UwQcYz2QLkBLhNvjIsAXCKvyDD8Izx-YffTw", neighborhood_id: "2"},
+  {name: "Amy Sans", age: "29", gender: "Female", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhVxMOOMR12TquHaFJDi7EJ10qQkJr2aNHMOd_4B5yXzL2uvan", neighborhood_id: "2"},
 
-  {name: "Marcus Tate", age: "24", gender: "Male", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD1X65dBsNftbLfxftMxTJZkvcpIjqSnwPuJlcsDwUfx9Sp6yz5", neighborhood_id: "1"},
+  {name: "Marcus Tate", age: "24", gender: "Male", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBIlCbomWIluPF5g0OYvanhvT4yEKnstZcwCDTVN7JLCQxKEZxYA", neighborhood_id: "1"},
 
   {name: "Kevin Perry", age: "35", gender: "Male", description:"In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.
 
