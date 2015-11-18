@@ -102,6 +102,4 @@ neighborhoods = Neighborhood.create([
   {name: "Katie Falk", age: "28", gender: "Female", description:"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.", photo_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC16S-AKLN3sb5SLmZaxR5wVu9OBChCBAQw1ZIaaVAfrk_B77qJQ", neighborhood_id: "1"},
 
 
-
-
 ])
