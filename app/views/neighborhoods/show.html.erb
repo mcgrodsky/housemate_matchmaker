@@ -1,10 +1,10 @@
 <div class = "container-fluid">
   <h1 class = "neighborhood-title"> Current Listings for <%=@neighborhood.title %></h1>
   <%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
-  <% @neighborhood.listings.in_groups_of(3, false).each do |group| %>
+  <% @neighborhood.listings.in_groups_of(1, false).each do |group| %>
   <div class = "row">
     <% group.each do |listing| %>
-    <div class = "col-lg-4 listing-grid text-center">
+    <div id = "listing-container" class = "col-lg-12 listing-grid text-center">
       <%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%>
       <%= image_tag(listing.photo_url, class: "listing-photo") %>
     </div>

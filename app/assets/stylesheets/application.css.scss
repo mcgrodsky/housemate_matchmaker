@@ -12,15 +12,12 @@ h2{
   font-size: 20px;
   color: red
 }
-
 .neighborhood-description {
   color: purple;
 }
-
 button {
   margin: 1em;
 }
-
 .panel-heading a {
   font-size: 40px;
   color: red;
@@ -29,14 +26,17 @@ button {
 .navbar-brand {
   font-size: 20px;
 }
-
-
-
 #neighborhood-container {
     border: 1px dashed gray;
     height: 320px;
+    margin-top: 20px;
 }
-
+#listing-container {
+  margin-top: 20px;
+}
 .listing-grid {
   border: 1px dashed green;
+}
+.listing-photo {
+  width: 200px;
 }
