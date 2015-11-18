@@ -13,16 +13,19 @@ h2{
   color: red
 }
 
-#neighborhoods-index {
-  border: 1px solid black;
-  margin: 1em;
-}
-
 .neighborhood-description {
   color: purple;
 }
 
-
 button {
   margin: 1em;
+}
+
+.panel-heading a {
+  font-size: 40px;
+  color: red;
+}
+
+.navbar-brand {
+  font-size: 20px;
 }
