@@ -1,8 +1,8 @@
-<div id = "neighborhoods-index" class = "container">
-  <% @neighborhoods.in_groups_of(3, false).each do |group| %>
+<div id = "neighborhoods-index" class = "container-fluid">
+  <% @neighborhoods.in_groups_of(1, false).each do |group| %>
   <div class = "row">
     <% group.each do |neighborhood| %>
-    <div id = "neighborhood-container" class = "col-md-4">
+    <div id = "neighborhood-container" class = "col-lg-6 col-lg-offset-3 text-center">
       <h1><%= link_to(neighborhood.title, neighborhood, class: "neighborhood-title") %></h1>
       <h2><%= link_to(neighborhood.description, neighborhood, class: "neighborhood-description") %></h2>
     </div>
