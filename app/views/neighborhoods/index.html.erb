@@ -1,9 +1,8 @@
 <div id = "neighborhoods-index" class = "container">
-  <div class = "row">
-    <div class = "col-md-4">
-      <% @neighborhoods.each do |neighborhood| %>
-      <h1 class = "neighborhood-title"><%= link_to(neighborhood.title, neighborhood) %></h1>
-      <h2 class = "neighborhood-description"><%= link_to(neighborhood.description, neighborhood) %></h2>
+  <div class = "row"><% @neighborhoods.each do |neighborhood| %>
+    <div class = "col-lg-12">
+      <h1><%= link_to(neighborhood.title, neighborhood, class: "neighborhood-title") %></h1>
+      <h2><%= link_to(neighborhood.description, neighborhood, class: "neighborhood-description") %></h2>
       <% end %>
     </div>
   </div>
