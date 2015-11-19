@@ -7,3 +7,5 @@ class User < ActiveRecord::Base
   has_one :neighborhood
   has_one :listing, through: :neighborhood
 end
+
+# users belong to neighborhood_path?
