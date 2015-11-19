@@ -1,25 +1,31 @@
 <div class = "container-fluid neighborhood-show">
-  <div class = "neighborhood-title-show"> Current Listings for <%=@neighborhood.title %></div>
-  <div class = "listing-add text-center"><%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
-  </div>
+  <div class = "row search-listing">
+    <div class = "neighborhood-title-show"> Current Listings for <%=@neighborhood.title %></div>
 
-  <%= form_tag neighborhood_path, :method => 'get' do %>
-    <div class = "text-center search">
-      <%= text_field_tag :search, params[:search] %>
-      <%= submit_tag "Search", :name => nil %>
+      <div class = "col-lg-6 listing-add text-center"><%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
+      </div>
+      <div class = "search">
+        <%= form_tag neighborhood_path, :method => 'get' do %>
+        <div class = "text-center search">
+          <%= text_field_tag :search, params[:search] %>
+          <%= submit_tag "Search", :name => nil %>
+        </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
+
 
   <% @listings.in_groups_of(1, false).each do |group| #function to get listings to display on unique row - bootstrap %>
   <div class = "row">
     <% group.each do |listing| %>
     <div id = "listing-container" class = "col-lg-4 col-lg-offset-4 listing-grid text-center">
       <div class = "listing-show">
-        <div class = "listing-name"><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing, class: "listing-name"))%>
-        <%= image_tag(listing.photo_url, class: "listing-photo") %>
+        <div class = "listing-name">
+          <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%></h1>
+          <%= image_tag(listing.photo_url, class: "listing-photo") %>
+        </div>
       </div>
+      <% end %>
     </div>
     <% end %>
   </div>
-  <% end %>
-</div>

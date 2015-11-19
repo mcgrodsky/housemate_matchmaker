@@ -42,7 +42,7 @@ body {
   text-align: center;
 }
 .neighborhood-title:hover {
-  color:red;
+  color: black;
   text-decoration: none;
 }
 .neighborhood-description {
@@ -100,19 +100,54 @@ button {
   width: 350px;
 }
 .listing-name {
-  font-size: 30px;
+  font-size: 40px;
+  color: red;
+}
+.listing-name:hover{
+  color: white;
+  text-decoration: none;
 }
 
 .listing-show {
-  margin-top: 6em;
-  margin-bottom: 4em;
+  margin: 1em;
+}
+.listing-show a {
+  color: white;
+  text-decoration: none;
+}
+.listing-show a:hover{
+  text-decoration: none;
+  color: black;
+}
+.listing-show-page {
+  margin: 6em 0;
 }
 
 .neighborhood-show {
   margin-top: 6em;
   margin-bottom: 4em;
+
+
 }
 
 .sign-up {
   margin-top: 2em;
+}
+
+.listing-add {
+  margin: 3px;
+  font-size: 25px;
+}
+
+.search {
+  font-size: 25px;
+}
+
+.search-listing {
+  border-radius: 10px;
+  padding: 1em;
+  background: #F8F8F8;
+  -webkit-box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
+box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
 }
