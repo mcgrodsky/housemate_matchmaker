@@ -15,7 +15,7 @@
     <% group.each do |listing| %>
     <div id = "listing-container" class = "col-lg-4 col-lg-offset-4 listing-grid text-center">
       <div class = "listing-show">
-        <%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%>
+        <div class = "listing-name"><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing, class: "listing-name"))%>
         <%= image_tag(listing.photo_url, class: "listing-photo") %>
       </div>
     </div>

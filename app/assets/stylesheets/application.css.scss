@@ -44,7 +44,6 @@ body {
 .neighborhood-title:hover {
   color:red;
   text-decoration: none;
-
 }
 .neighborhood-description {
   color: #FDF5E6;
@@ -77,12 +76,31 @@ button {
 
 #listing-container {
   margin-top: 1em;
+  background: lightgray;
+  border-radius: 8px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.6);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#listing-container:hover {
+    cursor: hand;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .listing-grid {
   border: 1px dashed green;
 }
 .listing-photo {
-  width: 200px;
+  width: 350px;
+}
+.listing-name {
+  font-size: 30px;
 }
 
 .listing-show {
