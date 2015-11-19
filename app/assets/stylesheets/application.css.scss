@@ -4,19 +4,23 @@ body {
   background-image: url("sketch.jpg");;
 }
 
+.navbar {
+  padding: 2em;
+}
+.nav-description {
+  margin-right: 2em;
+}
+
 #neighborhood-container {
     border: 1px dashed gray;
     height: 340px;
-    margin-top: 40px;
+    margin-top: 5em;
+    margin-bottom: 3em;
     background: lightgray;
-    /* Fallback for web browsers that don't support RGBa */
-  background-color: rgb(0, 0, 0);
-  /* RGBa with 0.6 opacity */
-  background-color: rgba(0, 0, 0, 0.6);
-  /* For IE 5.5 - 7*/
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
 #neighborhood-container:hover {
@@ -25,16 +29,23 @@ body {
     opacity: .8;
 }
 .neighborhood-title{
-  color: gray;
+  color: white;
   font-size: 30px;
   text-align: center;
+}
+.neighborhood-title:hover {
+  color:red;
+  text-decoration: none;
 
 }
 .neighborhood-description {
-  color: purple;
+  color: #FDF5E6;
   font-size: 15px;
-  color: gray;
   line-height: 20px;
+}
+.neighborhood-description:hover{
+  color: #FDF5E6;
+  text-decoration: none;
 }
 
 h2 {
@@ -60,4 +71,8 @@ button {
 }
 .listing-photo {
   width: 200px;
+}
+
+.listing-show {
+  margin-top: 6em;
 }
