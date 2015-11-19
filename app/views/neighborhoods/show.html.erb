@@ -2,6 +2,11 @@
   <h1 class = "neighborhood-title"> Current Listings for <%=@neighborhood.title %></h1>
   <%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
 
+
+    <div class = "search">
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search", :name => nil %>
+    </div>
   
 
   <% @neighborhood.listings.in_groups_of(1, false).each do |group| %>

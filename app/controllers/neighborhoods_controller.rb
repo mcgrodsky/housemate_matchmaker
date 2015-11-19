@@ -8,6 +8,7 @@ end
 
 def show
     #  @neighborhood = Neighborhood.find(params[:id])
+
 end
 
 def edit
