@@ -6,9 +6,23 @@ body {
 
 #neighborhood-container {
     border: 1px dashed gray;
-    height: 300px;
+    height: 340px;
     margin-top: 40px;
     background: lightgray;
+    /* Fallback for web browsers that don't support RGBa */
+  background-color: rgb(0, 0, 0);
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#neighborhood-container:hover {
+    cursor: hand;
+    cursor: pointer;
+    opacity: .8;
 }
 .neighborhood-title{
   color: gray;
@@ -20,6 +34,11 @@ body {
   color: purple;
   font-size: 15px;
   color: gray;
+  line-height: 20px;
+}
+
+h2 {
+  line-height: 20px;
 }
 button {
   margin: 1em;

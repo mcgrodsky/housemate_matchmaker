@@ -13,7 +13,7 @@
   <% @listings.in_groups_of(1, false).each do |group| #function to get listings to display on unique row - bootstrap %>
   <div class = "row">
     <% group.each do |listing| %>
-    <div id = "listing-container" class = "col-lg-8 col-lg-offset-2 listing-grid text-center">
+    <div id = "listing-container" class = "col-lg-4 col-lg-offset-4 listing-grid text-center">
       <div class = "listing-show">
         <%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%>
         <%= image_tag(listing.photo_url, class: "listing-photo") %>

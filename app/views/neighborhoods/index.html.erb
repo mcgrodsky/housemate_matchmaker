@@ -2,7 +2,7 @@
   <% @neighborhoods.in_groups_of(2, false).each do |group| #function in order for bootstrap to put listings in seperate rows %>
   <div id = "neighborhoods-index" class = "row">
     <% group.each do |neighborhood| %>
-    <div id = "neighborhood-container" class = "col-lg-4 col-lg-offset-1 text-center">
+    <div id = "neighborhood-container" class = "col-lg-3 col-lg-offset-2  text-center">
       <h1><%= link_to(neighborhood.title, neighborhood, class: "neighborhood-title") %></h1>
       <h2><%= link_to(neighborhood.description, neighborhood, class: "neighborhood-description") %></h2>
     </div>
