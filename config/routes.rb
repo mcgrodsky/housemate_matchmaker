@@ -6,3 +6,5 @@ Rails.application.routes.draw do
       resources :listings
     end
 end
+
+# can remove route for listings#index if not in use by [:except]
