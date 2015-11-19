@@ -1,18 +1,25 @@
 @import "bootstrap";
 
-h1{
-  font-size: 30px;
-  text-align: center;
+body {
+  background-image: url("sketch.jpg");;
+}
+
+#neighborhood-container {
+    border: 1px dashed gray;
+    height: 300px;
+    margin-top: 40px;
+    background: lightgray;
 }
 .neighborhood-title{
   color: gray;
-}
-h2{
-  font-size: 20px;
-  color: red
+  font-size: 30px;
+  text-align: center;
+
 }
 .neighborhood-description {
   color: purple;
+  font-size: 15px;
+  color: gray;
 }
 button {
   margin: 1em;
@@ -25,12 +32,7 @@ button {
 .navbar-brand {
   font-size: 20px;
 }
-#neighborhood-container {
-    border: 1px dashed gray;
-    height: 320px;
-    margin-top: 20px;
-    background: lightgray;
-}
+
 #listing-container {
   margin-top: 1em;
 }
