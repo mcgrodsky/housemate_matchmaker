@@ -2,6 +2,7 @@
 
 body {
   background-image: url("sketch.jpg");;
+  font-family: 'Noticia Text', serif;
 }
 
 .navbar {
@@ -58,6 +59,7 @@ body {
   color: Gray;
   font-size: 30px;
   text-align: center;
+  font-family: 'Noticia Text', serif;
 }
 h2 {
   line-height: 20px;
@@ -97,12 +99,9 @@ button {
   border: 1px dashed green;
 }
 .listing-photo {
-  width: 350px;
+  width: 300px;
 }
-.listing-name {
-  font-size: 40px;
-  color: red;
-}
+
 .listing-name:hover{
   color: white;
   text-decoration: none;
@@ -114,6 +113,7 @@ button {
 .listing-show a {
   color: white;
   text-decoration: none;
+  font-size: 25px;
 }
 .listing-show a:hover{
   text-decoration: none;
@@ -126,8 +126,6 @@ button {
 .neighborhood-show {
   margin-top: 6em;
   margin-bottom: 4em;
-
-
 }
 
 .sign-up {
@@ -135,19 +133,25 @@ button {
 }
 
 .listing-add {
-  margin: 3px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .search {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .search-listing {
   border-radius: 10px;
   padding: 1em;
-  background: #F8F8F8;
-  -webkit-box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
-box-shadow: -1px -3px 5px 0px rgba(0,0,0,0.75);
+  background: #dde4e9;
+  -webkit-box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
+}
+
+.new-listing {
+  margin-top: 5em;
+}
+.test {
+  padding-top: 1em;
 }
