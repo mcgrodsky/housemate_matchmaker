@@ -12,16 +12,23 @@ body {
 }
 
 #neighborhood-container {
-    border: 1px dashed gray;
     height: 340px;
-    margin-top: 5em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 1em;
     background: lightgray;
     border-radius: 8px;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.neighborhood-index {
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 #neighborhood-container:hover {
@@ -86,4 +93,8 @@ button {
 .neighborhood-show {
   margin-top: 6em;
   margin-bottom: 4em;
+}
+
+.sign-up {
+  margin-top: 2em;
 }

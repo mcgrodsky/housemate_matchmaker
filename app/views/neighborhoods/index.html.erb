@@ -1,5 +1,5 @@
 <%= link_to (@neighborhood) do  %>
-  <div class = "container-fluid">
+  <div class = "container-fluid neighborhood-index">
     <% @neighborhoods.in_groups_of(2, false).each do |group| #function in order for bootstrap to put listings in seperate rows %>
       <div id = "neighborhoods-index" class = "row">
         <% group.each do |neighborhood| %>
