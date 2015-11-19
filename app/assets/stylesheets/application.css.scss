@@ -17,6 +17,7 @@ body {
     margin-top: 5em;
     margin-bottom: 3em;
     background: lightgray;
+    border-radius: 8px;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
@@ -47,7 +48,11 @@ body {
   color: #FDF5E6;
   text-decoration: none;
 }
-
+.neighborhood-title-show{
+  color: Gray;
+  font-size: 30px;
+  text-align: center;
+}
 h2 {
   line-height: 20px;
 }
