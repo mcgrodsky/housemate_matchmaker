@@ -1,5 +1,5 @@
 <div class = "container-fluid">
-  <div class = "row">
+
     <div class="panel panel-default">
       <!-- Default panel contents -->
       <div class="panel-heading"><%= link_to "Back to #{@neighborhood.title} Listings", neighborhood_path(@neighborhood, @listing) %></div>
@@ -7,19 +7,21 @@
         <p></p>
       </div>
       <table class="table">
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Gender</th>
-          <th>About Me</th>
-        </tr>
-        <tr>
-          <td><%= @listing.name %></td>
-          <td><%= @listing.age %></td>
-          <td><%= @listing.gender %></td>
-          <td><%= @listing.description %></td>
-          <td><%= image_tag(@listing.photo_url, class: "listing-photo") %></td>
-        </tr>
+        <div class = "row">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>About Me</th>
+          </tr>
+          <tr>
+            <td><%= @listing.name %></td>
+            <td><%= @listing.age %></td>
+            <td><%= @listing.gender %></td>
+            <td><%= @listing.description %></td>
+            <td><%= image_tag(@listing.photo_url, class: "listing-photo") %></td>
+          </tr>
+        </div>
       </table>
       <% if current_user.id == @listing.user_id %>
       <%= link_to "edit listing", edit_neighborhood_listing_path(@neighborhood, @listing) %>
