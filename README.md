@@ -27,6 +27,6 @@ By creating an account, users can post a listing advertising themselves to poten
   <ul>
     <li>Implement self-referential association so users can directly connect </li>
     <li> Employ tags so users can list interests/hobbies, and other users can sort listings by hobbies</li>
-    <li> Allow for facebook/linkein sign-in/authentication </li>
+    <li> Allow for facebook/linkedin sign-in/authentication </li>
   </ul>  
 
