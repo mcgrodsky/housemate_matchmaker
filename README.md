@@ -2,6 +2,8 @@
 
 User Stories - https://trello.com/b/KZeOmcRO/project-2-housemate-matchmaker
 
+App Demo - https://youtu.be/IulKaOCzOFw
+
 By creating an account, users can post a listing advertising themselves to potential new houesmates. Only users who created that listing can update/delete. Other users can browse these listings to find a match. 
 
 <h2>Technologies Used</h2>
