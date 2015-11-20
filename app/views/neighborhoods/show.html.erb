@@ -3,7 +3,7 @@
     <div class = "neighborhood-title-show"> Current Listings for <%=@neighborhood.title %>
     </div>
   <div class = "test">
-      <div class = "col-lg-6 listing-add text-center"><%= link_to "Add listing (+)", new_neighborhood_listing_path(@neighborhood) %>
+      <div class = "col-lg-6 listing-add text-center"><%= link_to "Add listing <i class='fa fa-plus'></i>".html_safe, new_neighborhood_listing_path(@neighborhood) %>
         </div>
         <div class = "search">
           <%= form_tag neighborhood_path, :method => 'get' do %>
@@ -18,10 +18,10 @@
   <% @listings.in_groups_of(1, false).each do |group| #function to get listings to display on unique row - bootstrap %>
   <div class = "row">
     <% group.each do |listing| %>
-    <div id = "listing-container" class = "col-lg-4 col-lg-offset-4 listing-grid text-center">
+    <div id = "listing-container" class = "col-lg-4 col-lg-offset-4 text-center">
       <div class = "listing-show">
         <div class = "listing-name">
-          <h1><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%></h1>
+          <h1 class><%= link_to(listing.name, neighborhood_listing_path(@neighborhood, listing,))%></h1>
           <%= image_tag(listing.photo_url, class: "listing-photo") %>
         </div>
       </div>

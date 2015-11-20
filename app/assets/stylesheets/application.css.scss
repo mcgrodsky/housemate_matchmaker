@@ -1,12 +1,13 @@
 @import "bootstrap";
 
 body {
-  background-image: url("sketch.jpg");;
-  font-family: 'Noticia Text', serif;
+  background-image: url("sketch.jpg");
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .navbar {
   padding: 2em;
+  background: #e5e3c9;
 }
 .nav-description {
   margin-right: 2em;
@@ -56,10 +57,9 @@ body {
   text-decoration: none;
 }
 .neighborhood-title-show{
-  color: Gray;
-  font-size: 30px;
+  color: #d41b1b;
+  font-size: 26px;
   text-align: center;
-  font-family: 'Noticia Text', serif;
 }
 h2 {
   line-height: 20px;
@@ -67,13 +67,18 @@ h2 {
 button {
   margin: 1em;
 }
+
+.panel-default .panel-heading {
+  background: #d5d4c4;
+}
 .panel-heading a {
-  font-size: 40px;
-  color: red;
+  font-size: 26px;
+  color: #d41b1b;
+  text-align: center;
 }
 
 .navbar-brand {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #listing-container {
@@ -94,9 +99,6 @@ button {
     cursor: hand;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.5);
-}
-.listing-grid {
-  border: 1px dashed green;
 }
 .listing-photo {
   width: 300px;
@@ -145,7 +147,7 @@ button {
 .search-listing {
   border-radius: 10px;
   padding: 1em;
-  background: #dde4e9;
+  background: #d5d4c4;
   -webkit-box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
   box-shadow: -1px 2px 15px 0px rgba(0,0,0,0.75);
@@ -158,8 +160,21 @@ button {
   padding-top: 1em;
 }
 
-.fa-arrow-circle-left{
+.panel-heading .fa-arrow-circle-left{
   color: gray;
-  font-size: 30px;
+  font-size: 2em;
   padding: 1em;
+}
+
+tr th{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-description a {
+  font-size: 16px;
+}
+
+.collapse .navbar-nav li a {
+  font-size: 18px;
 }
