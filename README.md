@@ -2,7 +2,7 @@
 
 User Stories - https://trello.com/b/KZeOmcRO/project-2-housemate-matchmaker
 
-Technologies Used
+<h2>Technologies Used</h2>
 
 Ruby
 Ruby on Rails
