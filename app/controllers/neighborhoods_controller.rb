@@ -8,7 +8,6 @@ class NeighborhoodsController < ApplicationController
 
   def show
     #@neighborhood = Neighborhood.find(params[:id])
-    
     @listings = @neighborhood.listings.search(params[:search])
   end
 

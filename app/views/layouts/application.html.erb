@@ -10,8 +10,7 @@
 </head>
 <body>
   <div id = "wrap">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,10 +37,13 @@
             <li class = "nav-description"><%= link_to "Your solution for finding the perfect housemate. Browse our listings to begin your search", neighborhoods_path %></li>
           </ul>
         </ul>
+
   </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->
 </nav>
 <%= yield %>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 
 </body>
