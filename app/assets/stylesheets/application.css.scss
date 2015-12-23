@@ -6,8 +6,8 @@ body {
 }
 
 .navbar {
-  padding: 2em;
-  background: #e5e3c9;
+  padding: .5em;
+  background: white;
 }
 .nav-description {
   margin-right: 2em;
@@ -60,6 +60,7 @@ body {
   color: #d41b1b;
   font-size: 26px;
   text-align: center;
+
 }
 h2 {
   line-height: 20px;
@@ -127,8 +128,7 @@ button {
 }
 
 .neighborhood-show {
-  margin-top: 6em;
-  margin-bottom: 4em;
+  margin: 1em 0;
 }
 
 .sign-up, {
@@ -146,6 +146,10 @@ button {
 
 .search {
   font-size: 20px;
+}
+
+.row-search-listing{
+  margin-top: 2em;
 }
 
 .search-listing {
